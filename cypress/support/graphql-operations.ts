@@ -18,12 +18,13 @@ export const LOGIN_USER = `
 `;
 
 export const REGISTER_USER = `
-  mutation RegisterAccount($email: String!, $password: String!, $redirectUrl: String!) {
+  mutation RegisterAccount($email: String!, $password: String!, $redirectUrl: String!, $channel: String!) {
     accountRegister(
       input: {
         email: $email
         password: $password
         redirectUrl: $redirectUrl
+        channel: $channel
       }
     ) {
       user {
@@ -39,11 +40,12 @@ export const REGISTER_USER = `
 `;
 
 export const GET_PRODUCT_DETAILS = `
-  query ProductDetails($slug: String!) {
-    product(slug: $slug) {
+  query ProductDetails($slug: String!, $channel: String!) {
+    product(slug: $slug, channel: $channel) {
       id
       name
       slug
+      channel
       description
       pricing {
         priceRange {

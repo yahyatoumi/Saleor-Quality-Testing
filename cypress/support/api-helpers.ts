@@ -15,6 +15,8 @@ class ApiHelper {
       headers['Authorization'] = `JWT ${this.token}`;
     }
 
+    console.log('Executing variabless:', variables);
+
     return cy.request({
       method: 'POST',
       url: Cypress.env('apiUrl'),
@@ -49,9 +51,12 @@ class ApiHelper {
    * Registers a new user account
    */
   registerUser(email: string, password: string) {
+    const channelSlug = Cypress.env('channelSlug') || 'default-channel';
+
     return this.executeOperation(operations.REGISTER_USER, {
       email,
       password,
+      channel: channelSlug,
       redirectUrl: `${Cypress.config().baseUrl}/account/confirm/`,
     });
   }
@@ -60,9 +65,13 @@ class ApiHelper {
    * Gets product details by slug
    */
   getProductDetails(slug: string) {
-    return this.executeOperation(operations.GET_PRODUCT_DETAILS, {
+    const channelSlug = Cypress.env('channelSlug') || 'default-channel';
+    const variables = {
       slug,
-    });
+      channel: channelSlug,
+    };
+    console.log("vvv", variables)
+    return this.executeOperation(operations.GET_PRODUCT_DETAILS, variables);
   }
 
   /**

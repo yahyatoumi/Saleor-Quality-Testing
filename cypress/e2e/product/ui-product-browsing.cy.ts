@@ -1,3 +1,4 @@
+import apiHelpers from '@support/api-helpers';
 import ProductPage from '../../pages/ProductPage';
 
 describe('Product Browsing Flow', () => {
