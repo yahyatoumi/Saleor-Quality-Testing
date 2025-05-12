@@ -6,7 +6,7 @@ This repository contains automated tests for the Saleor e-commerce platform, a m
 
 As part of a QA testing assessment, this project demonstrates comprehensive test automation for critical user flows in the Saleor e-commerce platform:
 
-- User authentication (login/logout)
+- User authentication (register/login/logout)
 - Product browsing and search
 - Shopping cart operations
 - Checkout process
@@ -63,15 +63,28 @@ Once running, verify you can access:
 
 ### Step 4: Set Up Test Project
 
-1. Install dependencies:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yahyatoumi/Saleor-Quality-Testing.git
+   cd saleor-qa-automation
    ```
+
+2. Install dependencies:
+   ```bash
    npm install
    ```
 
-2. Verify Cypress installation:
-   ```
+3. Verify Cypress installation:
+   ```bash
    npx cypress verify
    ```
+
+4. Run the tests:
+   ```bash
+   npx cypress open
+   ```
+
+Once Cypress opens, you can select individual test files to run or run the entire test suite.
 
 ## 🧪 Running Tests
 
