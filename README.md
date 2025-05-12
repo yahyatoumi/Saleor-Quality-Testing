@@ -121,13 +121,14 @@ npm run test:checkout  # Checkout process tests
 │   │   ├── products.json          # Product data
 │   │   └── payment-methods.json   # Payment method data
 │   ├── support/          # Custom commands and utilities
-│   │   ├── commands.js            # Custom Cypress commands
-│   │   ├── e2e.js                 # Support file
-│   │   └── api-helper.js          # API testing utility
+│   │   ├── commands.ts            # Custom Cypress commands
+│   │   ├── e2e.ts                 # Support file
+│   │   └── api-helper.ts          # API testing utility
+│   │   └── graphql-operations.ts          # API testing utility
 │   └── pages/            # Page objects
 ├── QA_DOCUMENTATION.md   # Detailed testing approach and methodology
 ├── BUG_REPORTS.md        # Documentation of discovered issues
-├── cypress.config.js     # Cypress configuration
+├── cypress.config.ts     # Cypress configuration
 └── package.json          # Project dependencies
 ```
 
