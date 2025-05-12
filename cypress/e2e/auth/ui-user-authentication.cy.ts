@@ -1,3 +1,4 @@
+import apiHelpers from '@support/api-helpers';
 import LoginPage from '../../pages/LoginPage';
 import RegistrationPage from '../../pages/RegistrationPage';
 
