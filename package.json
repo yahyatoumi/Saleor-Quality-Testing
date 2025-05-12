@@ -1,0 +1,23 @@
+{
+  "name": "hahn",
+  "version": "1.0.0",
+  "description": "This repository contains automated tests for the Saleor e-commerce platform, an open-source headless commerce platform built with Python, Django, and GraphQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open",
+    "test:auth": "cypress run --spec \"cypress/e2e/auth/**/*.cy.ts\"",
+    "test:product": "cypress run --spec \"cypress/e2e/product/**/*.cy.ts\"",
+    "test:checkout": "cypress run --spec \"cypress/e2e/checkout/**/*.cy.ts\"",
+    "lint": "eslint cypress/**/*.ts",
+    "format": "prettier --write \"cypress/**/*.ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

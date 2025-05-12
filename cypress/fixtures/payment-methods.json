@@ -1,0 +1,39 @@
+{
+    "validCards": [
+        {
+            "type": "Visa",
+            "number": "4242424242424242",
+            "expiry": "12/25",
+            "cvc": "123"
+        },
+        {
+            "type": "MasterCard",
+            "number": "5555555555554444",
+            "expiry": "12/25",
+            "cvc": "123"
+        }
+    ],
+    "invalidCards": [
+        {
+            "type": "Declined",
+            "number": "4000000000000002",
+            "expiry": "12/25",
+            "cvc": "123",
+            "errorType": "declined"
+        },
+        {
+            "type": "Invalid Number",
+            "number": "1234567812345678",
+            "expiry": "12/25",
+            "cvc": "123",
+            "errorType": "invalidNumber"
+        },
+        {
+            "type": "Expired",
+            "number": "4242424242424242",
+            "expiry": "12/20",
+            "cvc": "123",
+            "errorType": "expired"
+        }
+    ]
+}

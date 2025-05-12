@@ -1,0 +1,31 @@
+{
+    "testProducts": [
+        {
+            "name": "Apple Juice",
+            "slug": "apple-juice",
+            "description": "Refreshing apple juice made from fresh apples.",
+            "category": "beverages",
+            "price": 2.99
+        },
+        {
+            "name": "Cotton T-Shirt",
+            "slug": "cotton-t-shirt",
+            "description": "Classic cotton t-shirt available in multiple colors.",
+            "category": "apparel",
+            "subCategory": "t-shirts",
+            "price": 19.99
+        },
+        {
+            "name": "Leather Wallet",
+            "slug": "leather-wallet",
+            "description": "Genuine leather wallet with multiple card slots.",
+            "category": "accessories",
+            "price": 49.99
+        }
+    ],
+    "searchTerms": {
+        "common": "shirt",
+        "specific": "leather wallet",
+        "nonexistent": "xyznonexistentproductxyz"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "admin": {
+        "email": "admin@admin.com",
+        "password": "admin"
+    },
+    "customer": {
+        "email": "test-customer@example.com",
+        "password": "TestPassword123!",
+        "firstName": "Test",
+        "lastName": "Customer",
+        "address": "123 Test Street",
+        "city": "Test City",
+        "postalCode": "12345",
+        "country": "US",
+        "phone": "555-123-4567"
+    },
+    "newUser": {
+        "email": "new-user@example.com",
+        "password": "NewUserPass123!"
+    }
+}
